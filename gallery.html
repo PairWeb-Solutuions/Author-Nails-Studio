@@ -1,0 +1,141 @@
+<!-- =========================
+SAVE THIS FILE AS: gallery.html
+========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gallery</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#f5f5f5;
+      font-family:'Poppins', sans-serif;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+      padding:50px 0;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .title h1{
+      font-family:'Cormorant Garamond', serif;
+      font-size:70px;
+      margin-bottom:10px;
+    }
+
+    .title p{
+      letter-spacing:3px;
+      font-size:13px;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:320px;
+      object-fit:cover;
+      border-radius:5px;
+      transition:0.4s;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.03);
+    }
+
+    .btn-wrap{
+      text-align:center;
+    }
+
+    .back-btn{
+      display:inline-block;
+      margin-top:50px;
+      padding:14px 30px;
+      background:black;
+      color:white;
+      text-decoration:none;
+      border-radius:4px;
+      transition:0.3s;
+    }
+
+    .back-btn:hover{
+      opacity:0.8;
+    }
+
+    @media(max-width:700px){
+
+      .title h1{
+        font-size:45px;
+      }
+
+      .gallery img{
+        height:250px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="title">
+      <h1>Our Gallery</h1>
+      <p>RECENT NAIL SETS</p>
+    </div>
+
+    <div class="gallery">
+
+      <img src="O.JPG">
+      <img src="N.JPG">
+      <img src="M.JPG">
+      <img src="L.JPG">
+      <img src="K.JPG">
+      <img src="J.JPG">
+      <img src="I.JPG">
+      <img src="H.JPG">
+      <img src="G.JPG">
+      <img src="F.JPG">
+      <img src="E.JPG">
+      <img src="D.JPG">
+      <img src="C.JPG">
+      <img src="B.JPG">
+
+    </div>
+
+    <div class="btn-wrap">
+
+      <a href="index.html" class="back-btn">
+        Back Home
+      </a>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
